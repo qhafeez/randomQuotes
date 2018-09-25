@@ -77,7 +77,7 @@ class App extends Component {
   
 
 componentDidMount(){
-  console.log(this.props);
+  // console.log(this.props);
 
   axiosInstance.get("https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json")
   .then((response)=>{
@@ -123,7 +123,7 @@ componentDidMount(){
               </div>
             </div>
             <div className={classes.buttonContainer}>
-              <div style={{backgroundColor:this.state.color}}><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" data-show-count="false" target="_blank">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8" ></script></div>
+              <div style={{backgroundColor:this.state.color}}><a  href={"https://twitter.com/intent/tweet?url="+window.location.href} className="twitter-share-button" data-show-count="false" target="_blank">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8" ></script></div>
               <div style={{backgroundColor:this.state.color}} onClick={this.quoteSelector}>New Quote</div>
 
             </div>

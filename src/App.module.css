@@ -37,6 +37,15 @@
 
 }
 
+.buttonContainer a{
+  text-decoration: none;
+  color:white;
+}
+
+.buttonContainer a:visited{
+  color:white;
+}
+
 .buttonContainer div{
   border-radius: 5px;
   cursor: pointer;
