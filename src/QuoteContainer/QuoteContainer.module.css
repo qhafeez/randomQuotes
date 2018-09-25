@@ -1,0 +1,29 @@
+.container{
+	width:100%;
+	background:white;
+	display:flex;
+	flex-direction: column;
+	padding:40px 50px;
+	font-weight:700;
+	font-size: 1.75em;
+	transition: 2s
+;}
+
+.quoteContainer{
+	
+}
+
+.buttonContainer{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+@media screen and (min-width: 500px){
+
+
+	.container{
+		width:450px;
+	}
+
+}
